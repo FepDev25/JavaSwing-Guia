@@ -11,6 +11,7 @@ class MiVentanaCentrada extends JFrame {
     public MiVentanaCentrada() throws HeadlessException {
         Toolkit miPantalla;
         Dimension miSize;
+        Image miIcono;
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
@@ -20,6 +21,8 @@ class MiVentanaCentrada extends JFrame {
         setLocation(miSize.width/4, miSize.height/4);
         //setLocationRelativeTo(null);
         setTitle("Ventana centrada");
+        miIcono = miPantalla.getImage("icono.jpeg");
+        setIconImage(miIcono);
     }
 
 }
