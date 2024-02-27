@@ -24,5 +24,4 @@ class MiVentanaCentrada extends JFrame {
         miIcono = miPantalla.getImage("icono.jpeg");
         setIconImage(miIcono);
     }
-
 }
