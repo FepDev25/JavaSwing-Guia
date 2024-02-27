@@ -32,6 +32,7 @@ public class EjemploVentana3x3 extends JFrame {
 
         // Agregar botones
         agregarBotones();
+        agregarEventos();
 
         // Agregar botones
         add(this.panelMenu);
@@ -43,6 +44,11 @@ public class EjemploVentana3x3 extends JFrame {
         for (JButton botone : botones) {
             this.panelMenu.add(botone);
         }
+    }
+
+    public void agregarEventos(){
+        buttonClientes.addActionListener(e -> JOptionPane.showMessageDialog(null, "Button clientes presionado"));
+        buttonFactura.addActionListener(e -> JOptionPane.showMessageDialog(null, "Button factura presionado"));
     }
 
     public static void main(String[] args) {
