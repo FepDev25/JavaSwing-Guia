@@ -1,12 +1,14 @@
 import java.awt.*;
+import java.awt.geom.Rectangle2D;
 import javax.swing.*;
 
 public class PruebaDibujo {
     public static void main(String[] args) {
         VentanaConDibujos v = new VentanaConDibujos();
         v.setVisible(true);
-        PanelConFiguras panelFig = new PanelConFiguras();
-        v.add(panelFig);
+       //  PanelConFiguras panelFig = new PanelConFiguras();
+        PanelFiguras2D panelFiguras2D = new PanelFiguras2D();
+        v.add(panelFiguras2D);
     }
 }
 
@@ -38,6 +40,18 @@ class PanelConFiguras extends JPanel{
 
         // Oval: X, Y, Ancho, Alto, con color de fondo
         g.fillOval(100,100,130,130);
+
+    }
+}
+
+class PanelFiguras2D extends JPanel{
+    @Override
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
+        // Sobreescribir paintComponent para utilizar figuras 2D
+        Graphics2D g2d = (Graphics2D) g;
+        Rectangle2D r = new Rectangle2D.Double(100,100,200,150);
+        g2d.draw(r);
 
     }
 }
