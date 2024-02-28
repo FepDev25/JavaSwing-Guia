@@ -1,3 +1,5 @@
+package swingbasics;
+
 import java.awt.*;
 import java.awt.geom.*;
 import javax.swing.*;
@@ -8,6 +10,7 @@ public class PruebaDibujo {
         v.setVisible(true);
         PanelConFiguras panelFig = new PanelConFiguras();
         PanelFiguras2D panelFiguras2D = new PanelFiguras2D();
+        v.add(panelFig);
         v.add(panelFiguras2D);
     }
 }
@@ -30,7 +33,7 @@ class PanelConFiguras extends JPanel{
         // g.drawRect(50,50,200,200);
 
         // Line: Punto Inicial (x, y), Punto Final (x, y)
-        // g.drawLine(100,100,300,200);
+        g.drawLine(5,5,111,5);
 
         // Arco: X, Y, Ancho arco, Alto arco, angle inicial, alto angle
         // g.drawArc(50, 100, 100,200, 120, 150);
@@ -39,7 +42,7 @@ class PanelConFiguras extends JPanel{
         // g.drawOval(100,100,130,130);
 
         // Oval: X, Y, Ancho, Alto, con color de fondo
-        g.fillOval(100,100,130,130);
+        // g.fillOval(100,100,130,130);
 
     }
 }

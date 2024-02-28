@@ -1,6 +1,8 @@
+package swingbasics;
+
 import javax.swing.*;
 
-public class Ventana {
+public class BasicVentana {
     public static void main(String[] args) {
         // Instancia de la ventana
         MiVentana v1 = new MiVentana();

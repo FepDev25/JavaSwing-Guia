@@ -1,3 +1,5 @@
+package swingbasics;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -21,7 +23,7 @@ class MiVentanaCentrada extends JFrame {
         setLocation(miSize.width/4, miSize.height/4);
         //setLocationRelativeTo(null);
         setTitle("Ventana centrada");
-        miIcono = miPantalla.getImage("icono.jpeg");
+        miIcono = miPantalla.getImage("swingbasics/icono.jpeg");
         setIconImage(miIcono);
     }
 }

@@ -1,3 +1,5 @@
+package swingbasics;
+
 public class ThreadMoverFigura extends Thread{
 
 
